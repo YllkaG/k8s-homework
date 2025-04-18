@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: apache-pod
   labels:
-    app: nginx
+    app: apache
 spec:
   containers:
-    - name: nginx-container
-      image: nginx:alpine
+    - name: apache-container
+      image: httpd:alpine
       ports:
         - containerPort: 80
       resources:
